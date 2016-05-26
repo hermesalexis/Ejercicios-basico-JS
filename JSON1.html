@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON1</title>
+</head>
+<body>
+   <script>
+        var usuario ='{"nombreUsuario": "Rosa Blanca", "pais": "Colombia","altura":1.75}'; //String con formato JSON
+        //var miObjeto = eval('(' + usuario + ')');
+        var miObjeto = JSON.parse(usuario); // hace lo mismo que la anterior sentencia, pero más claro y fácil
+        document.write("Su nombre es: " + miObjeto.nombreUsuario + " País: " + miObjeto.pais + 
+                       " altura: " + miObjeto.altura);
+   </script>
+    
+</body>
+</html>

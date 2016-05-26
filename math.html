@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Objeto Math</title>
+</head>
+<body>
+
+    <p>Math.ramdon() devuelve un número aleatorio entre 0 y 1</p>
+
+    <button onclick="miFunc()">Pruébalo</button>
+
+    <p id = "div1"></p>
+
+    <script>
+        function miFunc(){
+            //document.getElementById("div1").innerHTML = Math.random();// devuelve numero aleatorio entre 0 y 1
+            
+            //document.getElementById("div1").innerHTML = Math.min(1, 10 , 15 , 20); // encuentra el minimo valor 
+            //document.getElementById("div1").innerHTML = Math.max(1, 10 , 15 , 20); // encuentra el maximo valor
+            
+            //document.getElementById("div1").innerHTML = Math.round(0.998); // redondea un número
+            
+            //document.getElementById("div1").innerHTML = Math.ceil(2.5); // redondea hacia arriba
+           // document.getElementById("div1").innerHTML = Math.floor(2.5); // redondea hacia abajo
+            
+            document.getElementById("div1").innerHTML = Math.floor(Math.random() * 11 );
+        }
+    </script>
+
+
+</body>
+</html>

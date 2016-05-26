@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Alcance de variables</title>
+    <script>
+        // Define nuestra función agregar impuesto
+        function agregarImpuesto(subtotal, tasaImpuesto){
+            var total = subtotal * (1 + (tasaImpuesto / 100));
+            return total;
+        }
+    </script>
+</head>
+<body>
+
+    <script>
+      alert("Valor total de la factura a pagar es de: " + agregarImpuesto(13500 , 16));
+    </script>
+
+</body>
+</html>

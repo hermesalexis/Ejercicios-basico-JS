@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Programación Orientada a Objetos</title>
+    <script>
+        miNuevoObjeto = new Object(); // se instancia un objeto
+        miNuevoObjeto.info = "Soy un nuevo objeto básico";
+        /*function miFunc(){
+            alert(this.info);
+        }*/
+        
+        //miNuevoObjeto.mostrarInfo = miFunc; // se asigna la definición de la función miFunc no la llamada
+        
+        miNuevoObjeto.mostrarInfo = function(){ // función anónima
+            alert(this.info);
+        }
+    </script>
+</head>
+<body>
+
+    <input type="button" value="llamada a miFunc" onclick="miFunc()"/>
+    <input type="button" value="Llamada a mostrarInfo Mal" onclick="mostrarInfo()"/>
+    <input type="button" value="Llamada a mostrarInfo Bien" onclick="miNuevoObjeto.mostrarInfo()">
+
+</body>
+</html>

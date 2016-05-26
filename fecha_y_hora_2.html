@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fecha y Hora 2</title>
+</head>
+<body>
+    <script>
+        /*var miFecha = new Date();// fecha y hora actual
+        document.write("Objeto creado el día:  " + miFecha.getDate()+ "<br/>");
+        miFecha.setDate(15); // cambiar el día del mes a 15
+        document.write("Despues de modificar la fecha, el número del día es : " + miFecha.getDate());*/
+        
+        var miFecha = new Date();
+        document.write("Creado: " + miFecha.toDateString() + " " + miFecha.toTimeString() +
+                      "</br>");
+        miFecha.setDate(miFecha.getDate() + 33); // Añade 33 días a la fecha de partida
+        document.write("Despues de agregar 33 días: " + miFecha.toDateString() + " " + 
+                      miFecha.toTimeString());
+        
+    </script>
+
+
+
+</body>
+</html>

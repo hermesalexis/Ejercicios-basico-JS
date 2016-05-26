@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Uso del historial de navegación</title>
+</head>
+<body>
+    <script>
+        function siguiente(){
+            window.history.forward();
+        }
+        //history.go(-3); // vuelve hacia atras 3 páginas
+        //histroy.go(2); // va hacia adelante 2 páginas
+        alert("has visitado " + history.length + "páginas web en esta sección del navegador");
+    </script>
+
+    <button onclick="siguiente()"> Siguiente</button>
+
+</body>
+</html>

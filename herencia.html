@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Herencia</title>
+    
+    <script>
+        function Domestico(){
+            this.animal = "";
+            this.nombre ="";
+            this.configurarAnimal = function(nuevoAnimal){
+                this.animal = nuevoAnimal;
+                
+            }
+            this.configurarNombre = function(nuevoNombre){
+                this.nombre = nuevoNombre;
+            }
+        }
+    
+        var miGato = new Domestico();
+        miGato.configurarAnimal = "Gato";
+        miGato.configurarNombre = "Silvestre";
+        
+        Perro.prototype = new Domestico();
+        
+        function Perro(){
+            this.raza ="";
+            this.configurarRaza = function(nuevaRaza){
+                this.raza = nuevaRaza;
+            }
+            this.mostrarInfo = function(){
+                alert(this.nombre + " es un " + this.raza);
+            }
+        }
+        
+        var miPerro = new Perro();
+        miPerro.configurarNombre("Max");
+        miPerro.configurarRaza("Paston Aleman");
+        
+        
+    </script>
+</head>
+<body>
+    <input type="button" value="Información Perro" onclick="miPerro.mostrarInfo()"/>
+
+
+</body>
+</html>
